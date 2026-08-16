@@ -1,9 +1,14 @@
-# Multi-Region Hybrid Connection ☁️ 
-Maintaining cloud resources such as servers, databases, workloads, storage and networks are the purpose for Multi-region deployments, especially for disaster recovery. A transit gateway (TGW) is used to keep regions running hot by connecting cloud environments to share services in the event of a disaster. Route 53 failover policy will help route traffic to healthy regions 
+Multi-Region Hybrid Connectivity ☁️
 
-Parallel AWS Managed VPN's were configured for failover and redundancy to connect to the on-premise environment and connected to equipment behind two CGW's on-prem. The VPNs were connected to TGW with Equal-Cost Multipath (ECMP) enabled.
+Maintaining highly available cloud resources such as servers, databases, containerized workloads, storage, and networks is a key reason for implementing multi-region architectures, especially for disaster recovery.
 
-This project demonstrates a multi-region disaster recovery architecture built on AWS using Terraform modules. The environment is designed to improve availability, resiliency, and disaster recovery by deploying infrastructure across multiple AWS Regions.
+This project demonstrates a multi-region hybrid AWS architecture built with Terraform modules. AWS Transit Gateway (TGW) provides centralized connectivity between regional environments, while inter-region TGW peering enables workloads and shared services to communicate across AWS Regions. Amazon Route 53 failover routing provides DNS-level resiliency by directing traffic toward healthy application endpoints when the primary endpoint becomes unavailable.
+
+For hybrid connectivity, parallel AWS Site-to-Site VPN connections were provisioned to demonstrate redundant connectivity between AWS and a simulated corporate data center. The VPN architecture uses separate Customer Gateways (CGWs), dynamic routing with BGP, and Equal-Cost Multipath (ECMP) support on Transit Gateway to provide multiple eligible network paths.
+
+Security controls were incorporated throughout the architecture, including AWS WAF for protecting application ingress and a Suricata IDS/IPS deployment in US-East-2 for network traffic inspection and threat detection.
+
+The overall environment is designed to demonstrate high availability, network resiliency, disaster recovery, secure hybrid connectivity, and Infrastructure as Code (IaC) across multiple AWS Regions.
 
 # Commands 🏗️
 ```bash
