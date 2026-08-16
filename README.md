@@ -50,6 +50,7 @@ dig <aurora-endpoint>
 # Trace the network path to the Aurora endpoint
 traceroute <aurora-endpoint>
 ```
+![image alt](https://github.com/DMayrant/Multiregion-Hybrid-Connectivity/blob/main/Screenshot%202569-08-16%20at%2019.20.37.png?raw=true)
 
 # Disaster Recovery Architecture ☁️
 
