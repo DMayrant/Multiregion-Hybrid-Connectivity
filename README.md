@@ -53,6 +53,8 @@ traceroute <aurora-endpoint>
 
 # Disaster Recovery Architecture ☁️
 
+![image alt](https://github.com/DMayrant/Multiregion-Hybrid-Connectivity/blob/main/Multi-Region-Hybrid.jpeg?raw=true)
+
 
 # Services ☁️
 - Multi-region AWS deployment
