@@ -41,7 +41,7 @@ aws ec2 describe-transit-gateway-route-tables \
       
 ```  
 
-# Database connection validation
+# Database connection validation 🏢
 ```bash
 # Test TCP connectivity to the Aurora PostgreSQL endpoint (port 5432)
 nc -zv <aurora-endpoint> 5432
