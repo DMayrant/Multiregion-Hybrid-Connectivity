@@ -20,12 +20,12 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - directory: US-East-1
+          - directory: Environments/US-East-1
             region: us-east-1
-          - directory: EU-West-2
+          - directory: Environments/EU-West-2
             region: eu-west-2
-          - directory: US-East-2
-            region: us-east-2  
+          - directory: Environments/US-East-2
+            region: us-east-2
 
     defaults:
       run:
